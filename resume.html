@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      color: #00eaff;
+      text-shadow: 0px 0px 8px #00eaff;
+    }
+
+    /* Resume Card */
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      padding: 40px;
+      width: 600px;
+      box-shadow: 0 0 20px rgba(0, 234, 255, 0.5);
+      text-align: left;
+    }
+
+    .card h1 {
+      text-align: center;
+      font-size: 2em;
+      color: #00eaff;
+      margin-bottom: 30px;
+      text-shadow: 0px 0px 10px #00eaff;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+
+    .card p strong {
+      color: #ffd700;
+    }
+
+    /* Skills */
+    .skills {
+      margin-top: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 8px 10px 0 0;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: #00eaff;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0px 0px 10px #00eaff;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 12px;
+      font-size: 0.9em;
+      text-align: center;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="certificate.html">Certificate</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="ppt.html" class="active">PPT</a>
+    </nav>
+  </header>
+
+  <!-- Resume Section -->
+  <div class="container">
+    <div class="card">
+      <h1>Resume</h1>
+
+      <p><strong>Name:</strong> T. Arunachalam</p>
+      <p><strong>Education:</strong> B.Sc Computer Science with Artificial Intelligence</p>
+      <p><strong>Email:</strong> 24ai001@amjaincollege.edu.in</p>
+
+      <div class="skills">
+        <strong style="color:#ffd700;">Skills:</strong><br>
+        <span>C++</span>
+        <span>HTML</span>
+        <span>Java</span>
+        <span>Python</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Student Dashboard | Resume Page
+  </footer>
+</body>
+</html>
